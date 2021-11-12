@@ -29,48 +29,12 @@
 body {
     top: 0%;
     margin: 0%;
+    background-color: var(--secondary);
+    color: var(--accent-2);
 }
 
-.content {
-    display: grid;
-    gap: 20px;
-    max-width: 80%;
-    margin: auto;
-    margin-top: 3%;
-    grid-auto-rows: auto;
-    grid-column: 1fr fr;
-    grid-template-areas: "about competencies " "experience education" "hobbies ...";
-}
 
-#contact {
-    background-color: green;
-    position: absolute;
-    top: 2%;
-    right: 0%;
-    width: 500px;
-    padding: 1%;
-    border-radius: 5px 0 0 5px;
-}
-
-#contact h3 {
-    display: none;
-}
-
-#contact div dl {
-    margin: 0%;
-}
-
-#contact div dl dt {
-    background-color: red;
-    display: inline-block;
-    margin: 0%;
-}
-
-#contact div dl dd {
-    background-color: rebeccapurple;
-    display: inline-block;
-    margin: 0%;
-}
+/* header area */
 
 header {
     background-color: var(--primary);
@@ -87,4 +51,54 @@ header div {
     margin: 0%;
     margin-left: 10%;
     align-items: center;
+}
+
+
+/*contact section */
+
+#contact {
+    background-color: var(--secondary);
+    position: absolute;
+    top: 2%;
+    right: 0%;
+    width: 500px;
+    padding: 1%;
+    border-radius: 5px 0 0 5px;
+}
+
+#contact h3 {
+    display: none;
+}
+
+#contact div dl {
+    margin: 0%;
+    display: flex;
+}
+
+#contact dt {
+    width: 100px;
+    color: var(--accent-2);
+}
+
+#contact a {
+    text-decoration: none;
+    color: var(--accent);
+}
+
+#contact dd {
+    color: var(--accent);
+}
+
+
+/* content sections */
+
+.content {
+    display: grid;
+    gap: 20px;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 3%;
+    grid-auto-rows: auto;
+    grid-column: 1fr fr;
+    grid-template-areas: "about competencies " "experience education" "hobbies ...";
 }
