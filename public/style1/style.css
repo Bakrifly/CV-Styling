@@ -102,3 +102,38 @@ header div {
     grid-column: 1fr fr;
     grid-template-areas: "about competencies " "experience education" "hobbies ...";
 }
+
+.content h3::before {
+    content: "";
+    background-color: var(--accent);
+    position: absolute;
+    height: 2rem;
+    width: 5px;
+    margin-left: -1%;
+}
+
+.content h3 {
+    padding-left: 0.4rem;
+    line-height: 2rem;
+    background: linear-gradient(90deg, var(--primary) 0%, rgba(0, 212, 255, 0) 100%);
+}
+
+.content h4 {
+    color: var(--aux);
+}
+
+.content .experience-location::before {
+    content: "In";
+}
+
+.content .experience-institution::before {
+    content: " - ";
+}
+
+.content .experience-date-separator {
+    color: var(--aux);
+    font-weight: bolder;
+}
+
+
+/* progress bars */
