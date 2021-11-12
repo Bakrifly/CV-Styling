@@ -4,6 +4,12 @@
     --accent: #EA4842;
     --accent-2: #292828;
     --aux: #EA8E86;
+    --pbb1: black;
+    --pb1: pink;
+    --pbt1: purple;
+    --pbb2: grey;
+    --pb2: orange;
+    --pbt2: rgb(158, 155, 155);
 }
 
 #about {
@@ -112,6 +118,10 @@ header div {
     margin-left: -1%;
 }
 
+.content p {
+    line-height: 1.5rem;
+}
+
 .content h3 {
     padding-left: 0.4rem;
     line-height: 2rem;
@@ -136,4 +146,119 @@ header div {
 }
 
 
-/* progress bars */
+/*--  skills  --*/
+
+.skills-primary::before {
+    content: "Main";
+}
+
+.skills-secondary::before {
+    content: "Other";
+}
+
+
+/*-- skill bar size settings --*/
+
+.skill span {
+    font-size: 12pt;
+    overflow: visible;
+    display: inline-block;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    border-right: 2px solid;
+}
+
+
+/*-- primary progress bars --*/
+
+.skills-primary .skill {
+    background-color: var(--pbb1);
+    margin-top: 0.3rem;
+    line-height: 2rem;
+}
+
+.skills-primary span {
+    color: var(--pbt1);
+    border-right: yellowgreen 2px solid
+}
+
+.skills-primary div[data-skill="1"] span {
+    width: 10%;
+    background-color: var(--pb1);
+}
+
+.skills-primary div[data-skill="1"] span {
+    width: 10%;
+    background-color: var(--pb1);
+}
+
+.skills-primary div[data-skill="3"] span {
+    width: 30%;
+    background-color: var(--pb1);
+}
+
+.skills-primary div[data-skill="5"] span {
+    width: 50%;
+    background-color: var(--pb1);
+}
+
+.skills-primary div[data-skill="7"] span {
+    width: 70%;
+    background-color: var(--pb1);
+}
+
+.skills-primary div[data-skill="9"] span {
+    width: 90%;
+    background-color: var(--pb1);
+}
+
+.skills-primary div:last-child {
+    margin-bottom: 20px;
+}
+
+
+/*-- secondary progress bars --*/
+
+.skills-secondary .skill {
+    background-color: var(--pbb2);
+    margin-top: 0.3rem;
+    line-height: 2rem;
+}
+
+.skills-secondary span {
+    color: var(--pbt2);
+    border-right: yellowgreen 2px solid
+}
+
+.skills-secondary div[data-skill="1"] span {
+    width: 10%;
+    background-color: var(--pb2);
+}
+
+.skills-secondary div[data-skill="1"] span {
+    width: 10%;
+    background-color: var(--pb2);
+}
+
+.skills-secondary div[data-skill="3"] span {
+    width: 30%;
+    background-color: var(--pb2);
+}
+
+.skills-secondary div[data-skill="5"] span {
+    width: 50%;
+    background-color: var(--pb2);
+}
+
+.skills-secondary div[data-skill="7"] span {
+    width: 70%;
+    background-color: var(--pb2);
+}
+
+.skills-secondary div[data-skill="9"] span {
+    width: 90%;
+    background-color: var(--pb2);
+}
+
+
+/*--  media queries  --*/
