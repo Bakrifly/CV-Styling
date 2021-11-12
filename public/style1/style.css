@@ -1,11 +1,90 @@
 :root {
-    --blue: #6AC9C5;
-    --white: #FAFAF0;
-    --red: #EA4842;
-    --black: #292828;
-    --pink: #EA8E86;
+    --primary: #6AC9C5;
+    --secondary: #FAFAF0;
+    --accent: #EA4842;
+    --accent-2: #292828;
+    --aux: #EA8E86;
 }
 
-* {
-    background-color: var(--red);
+#about {
+    grid-area: about;
+}
+
+#competencies {
+    grid-area: competencies;
+}
+
+#experience {
+    grid-area: experience
+}
+
+#education {
+    grid-area: education;
+}
+
+#hobbies {
+    grid-area: hobbies;
+}
+
+body {
+    top: 0%;
+    margin: 0%;
+}
+
+.content {
+    display: grid;
+    gap: 20px;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 3%;
+    grid-auto-rows: auto;
+    grid-column: 1fr fr;
+    grid-template-areas: "about competencies " "experience education" "hobbies ...";
+}
+
+#contact {
+    background-color: green;
+    position: absolute;
+    top: 2%;
+    right: 0%;
+    width: 500px;
+    padding: 1%;
+    border-radius: 5px 0 0 5px;
+}
+
+#contact h3 {
+    display: none;
+}
+
+#contact div dl {
+    margin: 0%;
+}
+
+#contact div dl dt {
+    background-color: red;
+    display: inline-block;
+    margin: 0%;
+}
+
+#contact div dl dd {
+    background-color: rebeccapurple;
+    display: inline-block;
+    margin: 0%;
+}
+
+header {
+    background-color: var(--primary);
+}
+
+figure img {
+    border-radius: 3px;
+    border: var(--accent-2) 1px solid
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+    margin-left: 10%;
+    align-items: center;
 }
