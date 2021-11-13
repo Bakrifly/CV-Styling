@@ -39,6 +39,10 @@ body {
     color: var(--accent-2);
 }
 
+body p {
+    font-family: sans-serif;
+}
+
 
 /* header area */
 
@@ -115,11 +119,20 @@ header div {
     position: absolute;
     height: 2rem;
     width: 5px;
-    margin-left: -1%;
+    margin-left: -13px;
 }
 
 .content p {
     line-height: 1.5rem;
+    padding: 1rem;
+    border-left: var(--accent) 2px dashed;
+    border-bottom: var(--accent) 2px dashed;
+}
+
+.content #about p {
+    border-left: 0px;
+    border-bottom: 0px;
+    padding: 0.5rem;
 }
 
 .content h3 {
@@ -262,3 +275,26 @@ header div {
 
 
 /*--  media queries  --*/
+
+@media screen and (max-width: 1000px) {
+    header div {
+        flex-direction: column;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    #contact {
+        position: relative;
+        width: 100%;
+        padding: 0%;
+        margin-bottom: 1rem;
+    }
+    #contact h3 {
+        display: block;
+    }
+    #contact div {
+        width: 100%;
+        border-radius: 5px;
+    }
+}
