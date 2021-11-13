@@ -1,15 +1,15 @@
 :root {
-    --primary: #6AC9C5;
-    --secondary: #FAFAF0;
-    --accent: #EA4842;
-    --accent-2: #292828;
-    --aux: #EA8E86;
-    --pbb1: black;
-    --pb1: pink;
-    --pbt1: purple;
-    --pbb2: grey;
-    --pb2: orange;
-    --pbt2: rgb(158, 155, 155);
+    --primary: #011826;
+    --secondary: #012840;
+    --accent: #F21905;
+    --accent-2: #F2D22E;
+    --aux: #5FD9C2;
+    --pbb1: #115D8C;
+    --pb1: #C9C60E;
+    --pbt1: #011826;
+    --pbb2: #013F66;
+    --pb2: #696707;
+    --pbt2: #011826;
 }
 
 #about {
@@ -92,11 +92,11 @@ header div {
 
 #contact a {
     text-decoration: none;
-    color: var(--accent);
+    color: var(--aux);
 }
 
 #contact dd {
-    color: var(--accent);
+    color: var(--aux);
 }
 
 
@@ -179,6 +179,7 @@ header div {
     margin: 0.2rem;
     padding: 0.2rem;
     border-right: 2px solid;
+    padding-left: 0.5rem;
 }
 
 
