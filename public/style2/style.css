@@ -54,6 +54,13 @@ header figure {
     transform: rotate(-10deg) scale(120%);
 }
 
+header figure img {
+    width: 110px;
+    height: 110px;
+    border-radius: 3px;
+    border: var(--aux-2) 2px solid;
+}
+
 
 /*--------------------------------------------------*/
 

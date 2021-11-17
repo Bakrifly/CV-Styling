@@ -52,7 +52,9 @@ header {
 
 figure img {
     border-radius: 3px;
-    border: var(--accent-2) 1px solid
+    border: var(--accent-2) 1px solid;
+    width: 110px;
+    height: 110px;
 }
 
 header div {
